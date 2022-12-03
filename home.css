@@ -1,0 +1,171 @@
+.header {
+    text-align: center;
+    font-family: "Beaufort for LOL", serif;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+
+
+.part-one {
+    display: block;
+    letter-spacing: 0.1em;
+}
+
+.part-one a {
+    text-decoration: none;
+    color: #010101;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    font-style: italic;
+}
+
+.part-one a:hover {
+    text-decoration: none;
+}
+
+.part-two {
+    display: block;
+}
+
+.part-two a {
+    text-decoration: none;
+    color: #010101;
+    font-size: calc(61.82px + 3.03vw);
+    line-height: 0.85;
+    font-weight: 800;
+    letter-spacing: 0.03em;
+    font-style: italic;
+}
+
+.part-three {
+    max-width: 950px;
+    padding: 0px 10%;
+    margin: 12px auto 0px;
+    font-size: 0.875rem;
+    text-align: center;
+    letter-spacing: 0.08em;
+    line-height: 1.6;
+}
+
+.part-four {
+    padding: 0px 10%;
+    margin: 12px auto 0px;
+    font-size: 0.875rem;
+    text-align: center;
+    letter-spacing: 0.08em;
+    line-height: 1.6;
+}
+
+.Navbar {
+    width: 100%;
+    height: 70px;
+    display: flex;
+}
+
+.Navbar-container {
+    width: 1400px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid rgb(223, 221, 221);
+    padding: 15px;
+}
+
+.icon {
+    cursor: pointer;
+    width: 25px;
+    transition: all 0.3s;
+}
+
+.icon:hover {
+    /* width: 20px; */
+    padding-left: 10px;
+}
+
+.input-search {
+    border: none;
+    padding-left: 10px;
+}
+
+.input-search:focus-visible {
+    outline: none;
+}
+
+.Navbar-parttwo ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-bottom: 0;
+}
+
+.Navbar-parttwo ul a {
+    text-decoration: none;
+    color: black;
+}
+
+.Navbar-parttwo ul a li {
+    margin-right: 15px;
+}
+
+#Nav {
+    display: flex;
+    align-items: center;
+}
+
+.main {
+    width: 100%;
+    display: flex;
+    margin-top: 50px;
+}
+
+.main-container {
+    width: 1400px;
+    margin: auto;
+}
+
+.champ {
+    position: relative;
+    width: 250px;
+    margin: auto;
+    transition: all 0.3s;
+    margin-top: 30px;
+}
+
+.champ a {
+    text-decoration: none;
+}
+
+.champ:hover {
+    transform: scale(1.05);
+    transition: all 0.3s;
+}
+
+.title {
+    display: block;
+    overflow: hidden;
+    background-color: rgb(6, 28, 37);
+    color: #fff;
+    padding: 6% 8%;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.champ:hover a .title {
+    background-color: #006680;
+    padding: 6% 15%;
+    transition: all 0.3s;
+}
+
+.title:focus-visible {
+    outline: none;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

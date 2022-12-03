@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./home.css" type="text/css">
+    <title>Know Your Champion</title>
+</head>
+
+<body class="Body">
+    <header class="header">
+        <div class="part-one">
+            <a href="./index.html">KNOW YOUR</a>
+        </div>
+        <div class="part-two">
+            <a href="./index.html">CHAMPION</a>
+        </div>
+        <p class="part-three">With more than 140 champions, you will find the perfect match for your playstyle. Hope you
+            will enjoy our website!!</p>
+    </header>
+
+
+    <div class="Navbar">
+        <div class="Navbar-container">
+            <div class="Navbar-partone">
+                <i class="fa-solid fa-magnifying-glass icon"></i>
+                <input class="input-search" type="text" placeholder="Tìm Kiếm" aria-label="Search">
+            </div>
+            <div id="Nav">
+            </div>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="main-container">
+            <div class="row" id="cmp">
+            </div>
+        </div>
+
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/777c366e96.js" crossorigin="anonymous"></script>
+        <script>
+
+
+            const listchampion = [
+                {
+                    name: "Aatrox",
+                    image: "./asset/AAtrox.jpg",
+                    path: "./Detail/Aatrox.html"
+                },
+                {
+                    name: "Ahri",
+                    image: "./asset/ahri.jpg",
+                    path: "./Detail/Ahri.html"
+                },
+                {
+                    name: "Akali",
+                    image: "./asset/RiotX_ChampionList_akali.jpg",
+                    path: "./Detail/Akali.html"
+                },
+                {
+                    name: "Akshan",
+                    image: "./asset/RiotX_ChampionList_akshan_v2.jpg",
+                    path: "./Detail/Akshan.html"
+                },
+                {
+                    name: "Alistar",
+                    image: "./asset/RiotX_ChampionList_alistar.jpg",
+                    path: "./Detail/Alistar.html"
+                },
+                {
+                    name: "Amumu",
+                    image: "./asset/RiotX_ChampionList_amumu.jpg",
+                    path: "./Detail/Amumu.html"
+                },
+                {
+                    name: "Anivia",
+                    image: "./asset/RiotX_ChampionList_anivia.jpg",
+                    path: "./Detail/Anivia.html"
+                },
+                {
+                    name: "Annie",
+                    image: "./asset/RiotX_ChampionList_annie.jpg",
+                    path: "./Detail/Annie.html"
+                },
+                {
+                    name: "Aphelios",
+                    image: "./asset/Aphelios_3.jpg",
+                    path: "./Detail/Aphelios.html"
+                },
+                {
+                    name: "Ashe",
+                    image: "./asset/RiotX_ChampionList_ashe.jpg",
+                    path: "./Detail/Ashe.html"
+                },
+                {
+                    name: "Aurelion Sol",
+                    image: "./asset/RiotX_ChampionList_aurelionsol.jpg",
+                    path: "./Detail/Aurelionsol.html"
+                },
+                {
+                    name: "Bard",
+                    image: "./asset/RiotX_ChampionList_bard.jpg",
+                    path: "./Detail/Bard.html"
+                },
+                {
+                    name: "Caitlyn",
+                    image: "./asset/RiotX_ChampionList_caitlyn_v2.jpg",
+                    path: "./Detail/Caitlyn.html"
+                },
+                {
+                    name: "Camile",
+                    image: "./asset/RiotX_ChampionList_camille.jpg",
+                    path: "./Detail/Camille.html"
+                },
+                {
+                    name: "Darius",
+                    image: "./asset/RiotX_ChampionList_darius.jpg",
+                    path: "./Detail/Darius.html"
+                },
+                {
+                    name: "Fiora",
+                    image: "./asset/fiora.jpg",
+                    path: "./Detail/Fiora.html"
+                },
+                {
+                    name: "Graves",
+                    image: "./asset/graves.jpg",
+                    path: "./Detail/Graves.html"
+                },
+                {
+                    name: "Hecarim",
+                    image: "./asset/hecarim.jpg",
+                    path: "./Detail/Hecarim.html"
+                },
+                {
+                    name: "Irelia",
+                    image: "./asset/irelia.jpg",
+                    path: "./Detail/Irelia.html"
+                },
+                {
+                    name: "Jhin",
+                    image: "./asset/jhin.jpg",
+                    path: "./Detail/Jhin.html"
+                },
+                {
+                    name: "Kaisa",
+                    image: "./asset/kaisa.jpg",
+                    path: "./Detail/Kaisa.html"
+                },
+                {
+                    name: "Karma",
+                    image: "./asset/karma.jpg",
+                    path: "./Detail/Karma.html"
+                },
+                {
+                    name: "Leblanc",
+                    image: "./asset/LB.jpg",
+                    path: "./Detail/Leblanc.html"
+                },
+                {
+                    name: "Malphite",
+                    image: "./asset/malphite.jpg",
+                    path: "./Detail/Malphite.html"
+                },
+                {
+                    name: "Pyke",
+                    image: "./asset/pyke.jpg",
+                    path: "./Detail/Pyke.html"
+                },
+                {
+                    name: "Rammus",
+                    image: "./asset/rammus.jpg",
+                    path: "./Detail/Rammus.html"
+                },
+                {
+                    name: "Samira",
+                    image: "./asset/Samira_1.jpg",
+                    path: "./Detail/Samira.html"
+                },
+                {
+                    name: "Veigar",
+                    image: "./asset/veigar.jpg",
+                    path: "./Detail/Veigar.html"
+                }, {
+                    name: "Yasuo",
+                    image: "./asset/yasuo.jpg",
+                    path: "./Detail/Yasuo.html"
+                },
+                {
+                    name: "Zed",
+                    image: "./asset/Zed.jpg",
+                    path: "./Detail/Zed.html"
+                },
+            ]
+
+            const pageurl = [
+                {
+                    title: "TOP",
+                    path: "./TOP/index.html"
+                },
+                {
+                    title: "JUNG",
+                    path: "./JUNG/index.html"
+                },
+                {
+                    title: "MID",
+                    path: "./MID/index.html"
+                },
+                {
+                    title: "AD",
+                    path: "./AD/index.html"
+                },
+                {
+                    title: "SP",
+                    path: "./SP/index.html"
+                },
+            ]
+
+            document.getElementById("cmp").innerHTML = listchampion.map(item =>
+                `      
+                <div class="col" >
+                    <div class="champ">
+                        <a href="${item.path}">
+                            <img class="card-img-top image" src=${item.image} alt=${item.name}>
+                            <div class="title">${item.name}</div>
+                        </a>
+                    </div>
+                </div>
+            `
+            ).join("")
+
+            document.getElementById("Nav").innerHTML = pageurl.map(item =>
+                `
+                <div class="Navbar-parttwo" >
+                    <ul>
+                        <a href="${item.path}">
+                            <li>${item.title}</li>
+                        </a>
+                    </ul> 
+                </div>
+                   
+            `
+            ).join("")
+        </script>
+</body>
+
+</html>
